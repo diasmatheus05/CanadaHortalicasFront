@@ -1,0 +1,137 @@
+#home #contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 100px 5px;
+}
+
+#home #contato h1 {
+  font-size: 90px;
+
+  margin-bottom: 20px;
+
+  width: 100%;
+  max-width: 1500px;
+}
+
+#home #contato .infos {
+  width: 100%;
+  max-width: 1500px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#home #contato .infos > div {
+  width: 100%;
+}
+
+#home #contato .infos > div h6 {
+  font-size: 24px;
+
+  margin-bottom: 10px;
+}
+
+#home #contato .infos > div h6.social {
+  margin-top: 20px;
+}
+
+#home #contato .infos > div p {
+  font-size: 22px;
+  line-height: 26px;
+
+  margin-bottom: 5px;
+}
+
+#home #contato .infos .contact {
+  width: 80%;
+}
+
+#home #contato .embed {
+  position: relative;
+
+  padding-bottom: 21%;
+}
+
+#home #contato .embed iframe{
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+#home #contato .copyright {
+  width: 100%;
+
+  text-align: center;
+
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1250px) {
+  #home #contato h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #home #contato h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  #home #contato .infos > div h6 {
+    font-size: 20px;
+  }
+  
+  #home #contato .infos > div p {
+    font-size: 18px;
+    line-height: 22px;
+  
+    margin-bottom: 3px;
+  }
+}
+
+@media (max-width: 920px) {
+  #home #contato h1 {
+    font-size: 50px;
+  }
+
+  #home #contato .infos > div h6 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  #home #contato .infos > div p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home #contato {
+    padding: 20px 60px 5px;
+  }
+}
+
+@media (max-width: 715px) {
+  #home #contato .infos {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  #home #contato .infos > div {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  #home #contato {
+    padding: 20px 20px 5px;
+  }
+}

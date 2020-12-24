@@ -1,0 +1,70 @@
+#home #inicio {
+  background-image: url('../../../../assets/images/alfaceInicio.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home #inicio .opacidade {
+  background-color: black;
+  opacity: 0.3;
+
+  height: 100%;
+  width: 100%;
+}
+
+#home #inicio .name {
+  position: absolute;
+  text-align: center;
+
+  color: white;
+
+  font-size: 8vw;
+  line-height: 8vw;
+
+  max-width: 1500px;
+}
+
+@media (max-width: 1400px) {
+  #home #inicio .name {
+    font-size: 100px;
+    line-height: 100px;
+
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #home #inicio .name {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 545px) {
+  #home #inicio .name {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  #home #inicio .name {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 340px) {
+  #home #inicio .name {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}

@@ -1,0 +1,268 @@
+#catalogo-page .cards-wrapper .card {
+  width: 100%;
+  height: 180px;
+
+  border-radius: 10px;
+  background-color: white;
+
+  display: flex;
+  align-items: flex-start;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+#catalogo-page .cards-wrapper .card img {
+  max-width: 35%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 10px 0 0 10px;
+
+  cursor: pointer;
+}
+
+#catalogo-page .cards-wrapper .card > div {
+  height: 100%;
+
+  padding: 10px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+#catalogo-page .cards-wrapper .card > div input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 15px;
+  height: 15px;
+}
+
+#catalogo-page .cards-wrapper .card > div .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#catalogo-page .cards-wrapper .card > div .text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+
+  text-align: justify;
+
+  margin: 0;
+
+  cursor: pointer;
+}
+
+#catalogo-page .cards-wrapper .card > div .bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 20px;
+  width: 100%;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -21.82%, #FFFFFF 45.13%);
+}
+
+#catalogo-page .cards-wrapper .card .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: fixed; 
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  overflow: scroll;
+}
+
+#catalogo-page .cards-wrapper .card .modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  position: relative;
+}
+
+#catalogo-page .cards-wrapper .card .close {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#catalogo-page .cards-wrapper .card .close:hover,
+#catalogo-page .cards-wrapper .card .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#catalogo-page .cards-wrapper .card .modal-content img {
+  border-radius: 0;
+}
+
+#catalogo-page .cards-wrapper .card .modal-content > div {
+  padding: 0 20px;
+}
+
+#catalogo-page .cards-wrapper .card .modal-content > div input {
+  top: 35px;
+  right: 80px;
+  width: 20px;
+  height: 20px;
+}
+
+#catalogo-page .cards-wrapper .card .modal-content > div .title {
+  font-size: 36px;
+}
+
+#catalogo-page .cards-wrapper .card .modal-content > div .description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+@media (max-width: 1100px) {
+  #catalogo-page .cards-wrapper .card > div .text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #catalogo-page .cards-wrapper .card .modal-content > div .title {
+    font-size: 30px;
+  }
+  
+  #catalogo-page .cards-wrapper .card .modal-content > div .description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 950px) {
+  #catalogo-page .cards-wrapper .card > div .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  #catalogo-page .cards-wrapper .card > div .title {
+    font-size: 16px;
+  }
+
+  #catalogo-page .cards-wrapper .card > div .text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #catalogo-page .cards-wrapper .card .modal-content > div .title {
+    font-size: 26px;
+  }
+  
+  #catalogo-page .cards-wrapper .card .modal-content > div .description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content > div input {
+    top: 25px;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  #catalogo-page .cards-wrapper .card {
+    height: 150px;
+  }
+}
+
+@media (max-width: 580px) {
+  #catalogo-page .cards-wrapper .card .modal-content > div .title {
+    font-size: 24px;
+  }
+  
+  #catalogo-page .cards-wrapper .card .modal-content > div .description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content > div input {
+    right: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  #catalogo-page .cards-wrapper .card {
+    height: 120px;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content img {
+    max-width: 100%;
+    max-height: 400px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #catalogo-page .cards-wrapper .card .close {
+    top: 0;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content > div {
+    padding: 0;
+    position: relative;
+  }
+
+  #catalogo-page .cards-wrapper .card .modal-content > div input {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  #catalogo-page .cards-wrapper .card .modal-content img {
+    max-height: 290px;
+  }
+}
+
+@media (max-width: 375px) {
+  #catalogo-page .cards-wrapper .card .modal-content img {
+    max-height: 245px;
+  }
+}
+
+@media (max-width: 320px) {
+  #catalogo-page .cards-wrapper .card .modal-content img {
+    max-height: 200px;
+  }
+}

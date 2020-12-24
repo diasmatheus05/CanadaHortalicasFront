@@ -1,0 +1,124 @@
+#admin-page .non-logged {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 40px;
+}
+
+#admin-page .non-logged h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+#admin-page .non-logged > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#admin-page .non-logged > div label {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#admin-page .non-logged > div input {
+  margin-bottom: 15px;
+
+  height: 30px;
+}
+
+#admin-page .non-logged > div .login-button {
+  width: 200px;
+  height: 40px;
+
+  background-color: #129a06;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+#admin-page .non-logged > div .login-button:hover {
+  background-color: #0f6d07;
+}
+
+#admin-page .logged {
+  width: 100%;
+
+  padding: 20px;
+}
+
+#admin-page .logged h1 {
+  font-size: 45px;
+}
+
+#admin-page .logged > div {
+  padding: 10px 0 0 20px;
+}
+
+#admin-page .logged > div h2 {
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+#admin-page .logged > div .wrapper {
+  padding: 0 10px 0 20px;
+}
+
+#admin-page .logged > div .wrapper .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #c1bfc5;
+
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#admin-page .logged > div .wrapper .card:last-child {
+  border: none;
+}
+
+#admin-page .logged > div .wrapper .card > div {
+  display: flex;
+  align-items: center;
+}
+
+#admin-page .logged > div .wrapper .card > div img.image {
+  width: 70px;
+}
+
+#admin-page .logged > div .wrapper .card > div img.icons {
+  width: 30px;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+#admin-page .logged > div .wrapper .card > div .text {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  font-size: 16px;
+
+  /* max-width: 40vw; */
+}
+
+#admin-page .logged > div .wrapper .card > div .date {
+  font-size: 16px;
+}

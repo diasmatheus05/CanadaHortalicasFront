@@ -1,0 +1,98 @@
+#navbar {
+  width: 100%;
+  min-height: 70px;
+
+  position: absolute;
+  z-index: 10;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 0 0 20px;
+}
+
+#navbar > img {
+  width: 80px;
+
+  position: absolute;
+  left: 20px;
+}
+
+#navbar .options {
+  display: flex;
+
+  margin-left: 60px;
+}
+
+#navbar .options > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 40px;
+}
+
+#navbar .options > div img {
+  width: 40px;
+}
+
+#navbar .options > div a {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 17px;
+
+  color: #fff;
+
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+#navbar .options > div a:hover {
+  text-decoration: underline;
+}
+
+#navbar .sandwich-icon {
+  position: absolute;
+  right: 20px;
+
+  cursor: pointer;
+
+  display: none;
+}
+
+#navbar .sandwich-icon > div {
+  background-color: #fff;
+  width: 35px;
+  height: 5px;
+
+  margin-bottom: 6px;
+
+  transition: 0.4s;
+}
+
+#navbar .sandwich-icon.clicked .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-10px, 6px);
+  transform: rotate(-45deg) translate(-10px, 6px);
+}
+
+#navbar .sandwich-icon.clicked .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+  transform: rotate(45deg) translate(-8px, -6px);
+}
+
+#navbar .sandwich-icon.clicked .bar2 {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  #navbar .options {
+    display: none;
+  }
+
+  #navbar .sandwich-icon {
+    display: block;
+  }
+}
