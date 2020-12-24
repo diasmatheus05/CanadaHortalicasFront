@@ -31,7 +31,9 @@ function Catalogo() {
 
         <div className="text">
           <p>Ao encontrar o que deseja, você poderá deixar selecionado e clicar em Pedir agora, que iremos receber uma lista com os itens para um melhor atendimento</p>
-          <div className="button">Pedir agora</div>
+          <a href="https://api.whatsapp.com/send?phone=553196376163&text=Olá,%20gostaria%20de%20fazer%20um%20pedido%20e%20minha%20lista%20é:%20Lavandas,%20Tomates,%20Alfaces">
+            <div className="button">Pedir agora</div>
+          </a>
         </div>
       </div>
 

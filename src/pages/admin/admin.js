@@ -81,8 +81,8 @@ function Admin() {
             <div className="card">
               <div>
                 <img className="image" src={lavandas} alt="Lavandas"/>
+                <p className="name">Lavandas</p>
                 <p className="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p className="date">22/06/2020</p>
               </div>
 
               <div>
@@ -93,8 +93,8 @@ function Admin() {
             <div className="card">
               <div>
                 <img className="image" src={lavandas} alt="Lavandas"/>
+                <p className="name">Lavandas</p>
                 <p className="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p className="date">22/06/2020</p>
               </div>
 
               <div>
@@ -105,8 +105,8 @@ function Admin() {
             <div className="card">
               <div>
                 <img className="image" src={lavandas} alt="Lavandas"/>
+                <p className="name">Lavandas</p>
                 <p className="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p className="date">22/06/2020</p>
               </div>
 
               <div>

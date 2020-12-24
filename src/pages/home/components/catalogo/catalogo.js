@@ -25,7 +25,9 @@ function Catalogo() {
         </p>
 
         <div className="buttons">
-          <div className="pedir-agora">Pedir agora</div>
+          <a href="https://api.whatsapp.com/send?phone=553196376163&text=Olá,%20gostaria%20de%20fazer%20um%20pedido">
+            <div className="pedir-agora">Pedir agora</div>
+          </a>
           <div className="ver-mais" onClick={() => history.push('/catalogo')}>Ver mais</div>
         </div>
       </div>

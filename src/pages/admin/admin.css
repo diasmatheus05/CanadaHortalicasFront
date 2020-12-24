@@ -110,6 +110,10 @@
   cursor: pointer;
 }
 
+#admin-page .logged > div .wrapper .card > div .name {
+  margin-left: 50px;
+}
+
 #admin-page .logged > div .wrapper .card > div .text {
   margin-left: 50px;
   margin-right: 50px;
